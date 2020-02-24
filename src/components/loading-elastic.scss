@@ -1,0 +1,60 @@
+
+@keyframes scaleElastic {
+    0% {
+        transform: scale3d(0, 0, -0.7);
+        opacity: 0;
+    }
+    40% {
+        transform: scale3d(1.1, 1.1, 2);
+        opacity: 1;
+    }
+    50%{
+        transform: scale3d(1.05, 1.05, 2);
+    }
+    70% {
+        transform: scale3d(0.98, 0.98, -2.5);
+    }
+    100% {
+        transform: scale3d(1, 1, 2);
+    }
+}
+
+
+.cluster {
+    stroke: white;
+    animation-name: scaleElastic;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    transform-style: preserve-3d;
+    animation-duration: 0.95s;
+    animation-timing-function: cubic-bezier(0, 0.63, 0.49, 1);
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}  
+
+.cluster-red {
+    fill: #EE5097;
+    animation-delay: 0s;
+}
+.cluster-blue {
+    fill: #17A7E0;
+    animation-delay: 0.035s;
+}
+.cluster-teal {
+    fill: #23BAB1;
+    animation-delay: 0.125s;
+}
+.cluster-green {
+    fill: #92C73D;
+    animation-delay: 0.155s;
+}
+.cluster-darkblue {
+    fill: #0678A0;
+    animation-delay: 0.075s;
+}
+.cluster-yellow {
+    fill: #FDD009;
+    animation-delay: 0.06s;
+};
+
+
